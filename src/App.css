@@ -1,0 +1,273 @@
+/* ==============================
+   Global Styles & Resets
+   ============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Poppins", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(135deg, #f8fafc, #e9edf3);
+  color: #1f1f1f;
+  overflow-x: hidden;
+}
+
+/* ==============================
+   Root Container
+   ============================== */
+#root {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* ==============================
+   Header
+   ============================== */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(90deg, #4a90e2, #357abd);
+  color: white;
+  padding: 18px 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.app-header h2 {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-links button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-links button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 190px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  top: 110%;
+  right: 0;
+}
+
+.dropdown-content button {
+  color: #333;
+  padding: 10px 16px;
+  width: 100%;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dropdown-content button:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ==============================
+   Home Page
+   ============================== */
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #f8fafc, #e9edf3);
+  padding: 0 20px;
+}
+
+.home-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 70px 60px;
+  border-radius: 20px;
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.1);
+}
+
+.home-content h1 {
+  font-size: 2.2rem;
+  color: #1f2d3d;
+  margin-bottom: 15px;
+}
+
+.home-content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.btn {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #357abd, #2f5ea8);
+  transform: translateY(-3px);
+}
+
+/* Thank You Section */
+.thankyou-section {
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+  margin: 60px auto;
+  background: #f9fafc;
+  border-radius: 20px;
+  padding: 40px 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ==============================
+   Calculator Pages (CGPA / Attendance)
+   ============================== */
+.page-container {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 50px 60px;
+  width: 90%;
+  max-width: 850px;
+  margin: 50px auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.5s ease-in-out;
+  align-self: center;
+}
+
+/* Result Display */
+.result {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* ==============================
+   Footer
+   ============================== */
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  background: #f4f6fa;
+  border-top: 1px solid #e0e0e0;
+  color: #666;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.footer strong {
+  color: #333;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-content {
+    padding: 40px 25px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .page-container {
+    padding: 30px 25px;
+    width: 95%;
+  }
+
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

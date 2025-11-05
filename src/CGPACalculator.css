@@ -1,0 +1,132 @@
+
+/* =========================
+   CGPA Calculator Page
+   ========================= */
+
+.cgpa-page {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 50px 60px;
+  width: 100%;
+  max-width: 850px;
+  margin: 50px auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.cgpa-page h1 {
+  text-align: center;
+  color: #2d3e50;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Label and Input Styling */
+.cgpa-page label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.cgpa-page input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.cgpa-page input[type="number"]:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.3);
+}
+
+/* Subject Cards */
+.subject-card {
+  background: #f9f9fb;
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.subject-card h3 {
+  margin-bottom: 15px;
+  color: #2f3640;
+  font-size: 1.2rem;
+}
+
+/* Grade and Credit Inputs */
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 24px;
+}
+
+.subject-grid label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+/* Buttons */
+.cgpa-page button {
+  display: block;
+  width: 100%;
+  background: #4a90e2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cgpa-page button:hover {
+  background: #357abd;
+  transform: scale(1.02);
+}
+
+/* Results Section */
+.result {
+  background: #eef4ff;
+  color: #2d3e50;
+  font-weight: 600;
+  border-radius: 10px;
+  text-align: center;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cgpa-page {
+    padding: 30px 25px;
+  }
+
+  .subject-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cgpa-page h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Smooth Fade Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
