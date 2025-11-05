@@ -64,7 +64,7 @@ function App() {
       <footer className="footer">
         <p>
           © {new Date().getFullYear()} Academic Tools by{" "}
-          <strong>Akshay Damarla</strong>. All Rights Reserved.
+          <strong>Akshay Damarla 2400030175</strong>. All Rights Reserved.
         </p>
       </footer>
     </>
